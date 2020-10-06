@@ -9,7 +9,7 @@ pipeline {
         stage('checkout') {
             steps {
                     
-                   git "https://github.com/az900spallawkar/awx-test.git"
+                   git "https://github.com/az900spallawkar/test.git"
                          
                 }
             }
