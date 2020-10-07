@@ -15,7 +15,7 @@ pipeline {
             }
             stage('AWX test') {
             steps {
-               ansibleTower inventory: 'awx-nginx-saziya', jobTemplate: 'awx-jenkins-saziya', jobType: 'run', throwExceptionWhenFail: false, towerCredentialsId: 'jenkinsAWX', towerLogLevel: 'full', towerServer: 'AWX'
+               ansibleTower( inventory: 'awx-nginx-saziya', templateType: 'job', jobTemplate: 'awx-jenkins-saziya', jobType: 'run', throwExceptionWhenFail: false, towerCredentialsId: '', towerLogLevel: 'full', towerServer: 'AWX')
             }
         }
     }
